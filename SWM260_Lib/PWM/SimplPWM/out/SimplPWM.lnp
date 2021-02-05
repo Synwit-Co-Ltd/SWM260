@@ -1,0 +1,21 @@
+--cpu Cortex-M0
+".\out\main.o"
+".\out\swm260_adc.o"
+".\out\swm260_exti.o"
+".\out\swm260_gpio.o"
+".\out\swm260_i2c.o"
+".\out\swm260_pwm.o"
+".\out\swm260_timr.o"
+".\out\swm260_uart.o"
+".\out\swm260_wdt.o"
+".\out\swm260_dma.o"
+".\out\swm260_flash.o"
+".\out\swm260_port.o"
+".\out\swm260_spi.o"
+".\out\swm260_rtc.o"
+".\out\system_swm260.o"
+".\out\startup_swm260.o"
+--library_type=microlib --strict --scatter ".\out\SimplPWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\out\SimplPWM.map" -o .\out\SimplPWM.axf
